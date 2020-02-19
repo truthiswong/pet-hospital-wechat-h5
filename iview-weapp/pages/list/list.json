@@ -1,7 +1,9 @@
 {
   "navigationBarTitleText": "列表页",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "i-card": "../../dist/card/index",
-    "i-spin": "../../dist/spin/index"
+    "i-spin": "../../dist/spin/index",
+    "i-load-more": "../../dist/load-more/index"
   }
 }

@@ -7,4 +7,5 @@
     </i-card>
   </block>
     <i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
+    <i-load-more tip="{{loadMoreTip}}" loading="{{ loadMore }}" />
 </view>
