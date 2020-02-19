@@ -1,0 +1,10 @@
+<!-- logs.wxml -->
+<view class="container data-list">
+  <block wx:for="{{logs}}" wx:for-item="log" wx:key="index">
+    <i-card full title="{{index + 1}}.卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <view slot="content">{{index + 1}}.内容不错</view>
+      <view slot="footer">{{log}}</view>
+    </i-card>
+  </block>
+    <i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
+</view>

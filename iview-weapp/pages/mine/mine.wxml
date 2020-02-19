@@ -1,0 +1,22 @@
+<!--mine.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+
+<i-panel title="功能">
+    <i-cell-group>
+        <i-cell title="我的预约" is-link url="pages/mine/mine"></i-cell>
+        <i-cell title="宠物病例" is-link url="pages/mine/mine"></i-cell>
+        <i-cell title="检验报告" is-link url="pages/mine/mine"></i-cell>
+        <i-cell title="消费记录" is-link url="pages/mine/mine"></i-cell>
+    </i-cell-group>
+</i-panel>
